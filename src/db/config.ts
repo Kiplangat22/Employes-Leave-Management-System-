@@ -26,7 +26,7 @@ assert(SQL_DB, "SQL_DB is required");
 export const config = {
     port: PORT,
     sqlConfig: {
-        user: SQL_USER,
+        user: process.env.SQL_USER,
         password: SQL_PWD,
         database: SQL_DB,
         server: SQL_SERVER,
