@@ -5,6 +5,7 @@ import { getPool } from './db/config';
 //import route later   
 import leaveTypeRoutes from './routers/leave_types.routes';
 
+import employeesRoutes from './routers/employees.routes';   
 
 const app = express()
 
@@ -16,6 +17,7 @@ const port = process.env.PORT || 8081;
 
 //register routes ie,
 leaveTypeRoutes(app);
+employeesRoutes(app);
 
 
 //Root route
